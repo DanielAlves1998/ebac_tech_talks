@@ -1,0 +1,1 @@
+console.log('Deus é bom todo o tempo!!!')
