@@ -1,3 +1,25 @@
-body {
-    background-color: black;
+@use 'hero'; //aqui é para conseguir colocar o conteúdo do hero.scss, tem que importar ele aqui para funcionar
+
+
+//aqui é a criação do reset
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", system-ui;
+}
+
+.container {
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+
+    //essa largura é para celulares
+    @media (max-width: 640px) {
+        max-width: 80%; //largura máxima
+    }
+
+    @media (max-width: 1024px) {
+        max-width: 90%;
+    }
 }

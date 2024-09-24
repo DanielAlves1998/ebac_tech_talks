@@ -1,0 +1,60 @@
+.hero {
+    padding-top: 64px;
+    padding-bottom: 100px;
+    background-image: url(../images/fundo.png);
+    background-repeat: no-repeat; //é para a imagem não se repetir
+    background-size: cover; //é para aproveitar todo o tamanho do container
+    position: relative; //tem que aplicar para que o &:: before não ocupe todo o site e que tenha o limite ja exercido
+    color: #fff;
+
+
+    .container {
+        position: relative; //´[e para que todo o texto fiqe acima da imagem
+
+    }
+
+//aquui é para deixar a imagem menos visivel para o texto aparecer melhor
+    &::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #000;
+        content: ''; //aqui é para que funcione
+        opacity: 0.7; //é para dar uma  transparencia de 30% nesse caso e está tirando 70% que é esse 0.7
+
+    }
+
+    &__text {
+        margin-top: 64px;
+        margin-bottom: 64px;
+        font-size: 40px;
+        line-height: 56px;
+        font-weight: 800; //aqui aplica a fonte de 800 do roboto
+        text-align: center;
+    }
+
+    &__logo {
+        margin: 0 auto; // é para centralizar o conteúdo
+        height: 80px;
+        display: block; //precisa do display block, se não o margin 0 auto que é para centralizar não funcioina
+
+
+        @media (max-width: 640px) {
+            padding: 40px 0;
+
+            &__logo {
+                height: 24px;
+            }
+
+            &__text {
+                font-size: 22px;
+                line-height: 24px;
+                margin: 24px 0;
+
+            }
+        }
+
+    }
+}
