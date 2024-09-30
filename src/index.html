@@ -8,9 +8,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
-
-
     <link rel="stylesheet" href="styles/main.scss">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> <!--esse arquivo é para colocarmos animações do lite AOS-->
+
 </head>
 <body>
     <header class="hero">
@@ -19,11 +19,78 @@
             <p class="hero__text">
                 O maior evento de técnologia do Brasil começa em 10d 12h 20m 15s
             </p>
+            <div class="infos-bar">
+                <ul class="infos-bar__infos">
+                    <li class="infos-bar__infos__item">
+                        <b>Localização</b>
+                        Macaé - Aroeira - RJ
+                    </li>
+                    <li class="infos-bar__infos__item">
+                        <b>Preço</b>
+                        Apartir de R$ 120,00
+                    </li>
+                    <li class="infos-bar__infos__item">
+                        <b>Quando</b>
+                        09/10/2024 ás 19:30hrs
+                    </li>
+                </ul>
+                <a href="#" class="button button--primary">
+                    Garanta sua vaga
+                </a>
+            </div>
         </div>
     </header>
     
+    <section class="event event--frontend"> <!--o data-aos="fade-right" é para colocar a animação par a direita-->
+        <div class="container" data-aos="fade-right">
+            <div class="event__details">
+                <h2 class="event__details__title">Front-end</h2>
+                <p class="event__details__description">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat culpa tenetur, voluptatum error nobis ratione consequuntur deserunt autem repellat facere ducimus? Dolorum voluptatem similique accusantium officiis quisquam sint architecto amet.
+                </p>
+            </div>
+            <img class="event__image" src="./images/frontend.png" alt="front-end">
+        </div>
+    </section>
 
-        <script src="scripts/main.js"></script>
+    <section class="event event--ui-ux event--image-left">
+        <div class="container" data-aos="fade-left">
+            <div class="event__details">
+                <h2 class="event__details__title">UI/UX</h2>
+                <p class="event__details__description">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat culpa tenetur, voluptatum error nobis ratione consequuntur deserunt autem repellat facere ducimus? Dolorum voluptatem similique accusantium officiis quisquam sint architecto amet.
+                </p>
+            </div>
+            <img class="event__image" src="./images/frontend.png" alt="front-end">
+        </div>
+    </section>
+
+    <section class="event event--data-science">
+        <div class="container" data-aos="fade-right">
+            <div class="event__details">
+                <h2 class="event__details__title">Data Science</h2>
+                <p class="event__details__description">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat culpa tenetur, voluptatum error nobis ratione consequuntur deserunt autem repellat facere ducimus? Dolorum voluptatem similique accusantium officiis quisquam sint architecto amet.
+                </p>
+            </div>
+            <img class="event__image" src="./images/frontend.png" alt="front-end">
+        </div>
+    </section>
+
+    <section class="event event--backend event--image-left">
+        <div class="container" data-aos="fade-left">
+            <div class="event__details">
+                <h2 class="event__details__title">Back-end</h2>
+                <p class="event__details__description">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat culpa tenetur, voluptatum error nobis ratione consequuntur deserunt autem repellat facere ducimus? Dolorum voluptatem similique accusantium officiis quisquam sint architecto amet.
+                </p>
+            </div>
+            <img class="event__image" src="./images/frontend.png" alt="front-end">
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script> <!--esse arquivo é para colocarmos animações do lite AOS-->
+    <script src="scripts/main.js"></script>
     </body>
 </body>
 </html>

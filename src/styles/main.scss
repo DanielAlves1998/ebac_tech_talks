@@ -1,4 +1,8 @@
 @use 'hero'; //aqui é para conseguir colocar o conteúdo do hero.scss, tem que importar ele aqui para funcionar
+@use 'components/infos_bar';
+@use 'components/buttons';
+@use 'components/event';
+@use 'components/variables';
 
 
 //aqui é a criação do reset
@@ -7,6 +11,8 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Roboto", system-ui;
+    color: variables.$textColor;
+    list-style: none;
 }
 
 .container {

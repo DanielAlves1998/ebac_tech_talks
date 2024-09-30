@@ -1,1 +1,1 @@
-console.log('Deus é bom todo o tempo!!!')
+AOS.init(); //aqui é a continuação da etapa para deixar o site com animação 

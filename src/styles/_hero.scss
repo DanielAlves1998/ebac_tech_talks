@@ -1,3 +1,5 @@
+@use 'components/variables'; //tem que ser importado para que as cores funcionem
+
 .hero {
     padding-top: 64px;
     padding-bottom: 100px;
@@ -20,7 +22,7 @@
         left: 0;
         width: 100%;
         height: 100%;
-        background-color: #000;
+        background-color: variables.$secundaryTextcolor;
         content: ''; //aqui é para que funcione
         opacity: 0.7; //é para dar uma  transparencia de 30% nesse caso e está tirando 70% que é esse 0.7
 

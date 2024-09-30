@@ -1,0 +1,46 @@
+@use 'variables';
+
+.infos-bar {
+    padding: 16px 24px;
+    background-color: variables.$textColor;
+    display: flex;
+    justify-content: space-between; //serve para distribuir os elementos para os extremos nesse caso vai jogar o botão para direita e a ul para a esquerda
+
+
+
+    &__infos {
+        display: flex;
+        gap: 40px;
+
+        &__item {
+            font-size: 14px;
+            color: variables.$secundaryTextcolor;
+
+
+            b {
+                color: variables.$secundaryTextcolor;
+                font-size: 18px;
+                display: block;
+            }
+        }
+    }
+
+    //isso é pq estava com display flex e o display block deixa tudo um em baixo do outro
+    @media (max-width: 640px) { //aqui vai servir para concertar para a tela do celular
+display: block;
+
+        &__infos {
+            display: block;
+
+            &__item {
+                margin-bottom: 24px;
+            }
+        }
+    }
+
+    @media (max-width: 1024px) {
+        &__infos {
+            gap: 16px;
+        }
+    }
+}
